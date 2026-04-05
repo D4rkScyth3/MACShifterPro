@@ -39,7 +39,7 @@
 git clone https://github.com/D4rkScyth3/MACShifterPro.git
 cd mac-shifter-pro
 pip install -r requirements.txt
-python msp.py
+python main.py
 ```
 
 ---
