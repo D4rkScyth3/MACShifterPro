@@ -9,9 +9,6 @@ for i in range(3):
     print(".", end="\n", flush=True)
     time.sleep(0.2)
 subprocess.run(['sudo', 'apt', 'install', 'macchanger'])
-subprocess.run(['python', '-m', 'venv', 'myenv'])
-subprocess.run(['source', 'myenv/bin/activate'])
-subprocess.run(['sudo','pip', 'install', '-r', 'requirements.txt'])
 subprocess.run(['clear'])
 
 init(autoreset=True)
