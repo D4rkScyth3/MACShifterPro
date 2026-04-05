@@ -1,0 +1,5 @@
+MAC = MAC Adress (Media Access Control)
+
+Shifter = Changer (spoofer)
+
+Pro = Professional (Advance feature)
